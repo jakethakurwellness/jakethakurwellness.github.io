@@ -1,0 +1,19 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.line {
+  border-left: 1px solid black;
+}
+
+#viewer-controls {
+  margin-left: 100%;
+}
+
+#lighting {
+  font-size: 20px;
+}

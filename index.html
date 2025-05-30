@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jake Thakur Wellness</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  
+
+  <!-- Tabs -->
+  <nav class="flex space-x-4 bg-blue-100 py-2">
+    <span></span>
+    <header class="bg-white shadow p-4">
+      <h1 class="text-2xl font-bold">Jake Thakur Wellness</h1>
+    </header>
+    <button class="tab-btn text-blue-700 font-semibold" data-tab="nutrition">Nutrition</button>
+    <button class="tab-btn" data-tab="supplements">Supplements</button>
+    <button class="tab-btn" data-tab="nonedibles">Nonedibles</button>
+    <button class="tab-btn" data-tab="eating">Eating</button>
+    <button class="tab-btn" data-tab="training">Training</button>
+    <button class="tab-btn" data-tab="sourcing">Sourcing</button>
+  </nav><br>
+
+  <!-- Main Content Wrapper with controlled height -->
+<main class="max-w-6xl mx-auto p-6">
+  <!-- Fixed-height grid to isolate scroll behavior -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="height: 80vh;">
+    
+    <!-- Sidebar with internal scrolling -->
+    <div id="item-list" class="overflow-y-auto bg-white rounded-xl p-4 shadow space-y-2">
+      <!-- Dynamic list gets injected here -->
+    </div>
+
+    <!-- Viewer with natural height based on its own content -->
+    <div id="item-viewer" class="col-span-2 bg-white rounded-xl p-4 shadow overflow-visible">
+      <h2 id="detail-title" class="text-xl font-bold mb-2">Select an item</h2>
+      <div id="detail-content" class="text-gray-700 flex flex-col md:flex-row gap-4 items-start">
+        <div id="detail-text" class="flex-1">Click an item on the left to view details here.</div>
+        <img id="detail-image" class="w-64 h-auto rounded shadow hidden" alt="Protocol image" />
+      </div>
+    </div>
+    <div id="gap"></div>
+    <div id="viewer-controls" class="flex justify-center space-x-4 mt-4">
+      <button id="arrow-left" class="h-10 px-4 py-2 bg-blue-600 text-white rounded">🡄</button>
+      <button id="arrow-right" class="h-10 px-4 py-2 bg-blue-600 text-white rounded">🡆</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+<footer>
+    <span>&nbsp;</span>
+    <button id="lighting">🌓︎</button>
+</footer>
+</html>
