@@ -2,9 +2,6 @@
   - Add images to nutrition 
   - Add images to supplements
 
-  - Fix mobile viewport
-  - Update li text decoration for superset items
-
   - Provide accurate frequency for nutrition
   - Provide accurate frequency for supplements
   
@@ -2114,7 +2111,7 @@ const protocolData = {
           "SB Dips (2 sets failure)",
           "Pullups (2 sets failure)",
           "Right Arm Hanging Pulse (2x8)", 
-          "Pistol Squats (1x6-10"
+          "Pistol Squats (1x6-10)"
         ]
       },
       {
@@ -2125,22 +2122,20 @@ const protocolData = {
           "Warmup (Bands)",
           "Supinated Dead Hang (1 set 30+ seconds)",
           "German Hang (2 sets 10+ seconds)",
-          "Repeat 3x {",
-          "Front Lever (max hold)",
-          "Back Lever (max hold)",
-          "Front Lever Negative (1 rep)",
-          "Front Lever Tuck (max hold)",
-          "L-sit Ground (max hold)",
-          "Back Lever (max hold)",
-          "L-sit / V-sit parallettes (max hold)",
-          "}",
-          "Repeat 2x {",
-          "Windshield Wipers (1x5)",
-          "Toe-To-Bar (1x10)",
-          "Right Arm Hanging Pulse (1x8)",
-          "L-sit to V-sit Raise (1x3)",
-          "Pistol Squats (1x6-10)",
-          "}"
+          "Repeat 3x",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Lever (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever Negative (1 rep)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever Tuck (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit Ground (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Lever (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit / V-sit parallettes (max hold)",
+          "Repeat 2x",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windshield Wipers (1x5)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toe-To-Bar (1x10)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right Arm Hanging Pulse (1x8)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit to V-sit Raise (1x3)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pistol Squats (1x6-10)"
         ]
       }
     ],
@@ -2169,8 +2164,9 @@ const protocolData = {
           "Foam Rolling (Left Back + Side)",
           "Foam Rolling (Hamstring, IT Band, Anterior/Posterior/Interior Calf)",
           "Left Side Bolster (placing bolster under left ribs, breath into right ribcage. 3min)",
-          "Right Side Plank + Hip Lift (2x1min)",
-          "Right Arm Wall Reach Neural Cue (standing with right side to wall, reach right arm as high as possible, left arm to side, breathe into right ribs, holding breath 2x)",
+          "Repeat 2x",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right Side Plank + Hip Lift (1min)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right Arm Wall Reach Neural Cue (standing with right side to wall, reach right arm as high as possible, left arm to side, breathe into right ribs, holding breath)",
           "Dead Hang (1min)",
           "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 3min)"
         ]
@@ -2198,6 +2194,7 @@ const protocolData = {
 let dark = localStorage.getItem('darkmode') === '1' ? 1 : 0;
 let flatItemList = [];
 let currentIndex = -1; // tracks currently selected item in flatItemList
+let currentId = null;
 
 function renderItems(section) {
   const container = document.getElementById('item-list');
@@ -2248,14 +2245,15 @@ function renderItems(section) {
   document.getElementById('detail-content').textContent = 'Click an item on the left to view details.';
 }
 
-
 function renderSourcing() {
   const container = document.getElementById('item-list');
   container.innerHTML = '';
 
+  flatItemList = [];
+  currentIndex = -1;
+
   const sourceMap = {};
 
-  // Collect from nutrition and supplements
   ['nutrition', 'supplements'].forEach(section => {
     const dataSection = protocolData[section];
     for (const subcategory of Object.values(dataSection)) {
@@ -2271,7 +2269,6 @@ function renderSourcing() {
     }
   });
 
-  // Render grouped by source
   for (const [source, items] of Object.entries(sourceMap).sort(([a], [b]) => a.localeCompare(b))) {
     const sourceDiv = document.createElement('div');
     sourceDiv.className = 'mb-4';
@@ -2285,11 +2282,16 @@ function renderSourcing() {
     ul.className = 'pl-4 space-y-1';
 
     [...items].sort((a, b) => a.name.localeCompare(b.name)).forEach(item => {
+      flatItemList.push(item); // 👈 ADD TO LIST for arrow nav
+
       const li = document.createElement('li');
       const btn = document.createElement('button');
       btn.textContent = item.name;
       btn.className = 'text-blue-600 hover:underline text-sm pl-2';
-      btn.onclick = () => loadDetailById(item.id);
+      btn.onclick = () => {
+        loadDetailById(item.id);
+        currentIndex = flatItemList.findIndex(i => i.id === item.id); // 👈 track index
+      };
       li.appendChild(btn);
       ul.appendChild(li);
     });
@@ -2304,6 +2306,8 @@ function renderSourcing() {
 
 // Load detail into viewer
 function loadDetailById(id) {
+  currentId = id;
+  console.log(currentId);
   for (const category of Object.values(protocolData)) {
     for (const subcategory of Object.values(category)) {
       const found = subcategory.find(item => item.id === id);

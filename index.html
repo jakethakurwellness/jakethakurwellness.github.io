@@ -14,7 +14,6 @@
 
   <!-- Tabs -->
   <nav class="flex flex-wrap gap-2 bg-blue-100 py-2">
-    <span></span>
     <span class="bg-white shadow p-4">
       <h1 class="text-2xl font-bold">Jake Thakur Wellness</h1>
     </span>
@@ -24,7 +23,8 @@
     <button class="tab-btn" data-tab="eating">Eating</button>
     <button class="tab-btn" data-tab="training">Training</button>
     <button class="tab-btn" data-tab="sourcing">Sourcing</button>
-  </nav><br>
+    <button id="lighting">🌓</button>
+  </nav><div class="spacing"></div>
 
   <!-- Main Content Wrapper with controlled height -->
 <main class="max-w-6xl mx-auto p-6">
@@ -45,16 +45,14 @@
       </div>
     </div>
     <div id="gap"></div>
-    <div id="viewer-controls" class="flex justify-center space-x-4 mt-4">
-      <button id="arrow-left" class="h-10 px-4 py-2 bg-blue-600 text-white rounded">🡄</button>
-      <button id="arrow-right" class="h-10 px-4 py-2 bg-blue-600 text-white rounded">🡆</button>
+    <div id="viewer-controls" class="flex justify-center space-x-2 mt-4">
+      <button id="arrow-left" class="arrow">⬅️</button>
+      <button id="arrow-right" class="arrow">➡️</button>
     </div>
   </div>
 </main>
 <script src="script.js"></script>
 </body>
 <footer>
-    <span>&nbsp;</span>
-    <button id="lighting">🌓︎</button>
 </footer>
 </html>
