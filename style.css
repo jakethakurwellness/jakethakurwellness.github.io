@@ -17,3 +17,34 @@ strong {
 #lighting {
   font-size: 20px;
 }
+
+/* On mobile, fix item-list height */
+@media (max-width: 767px) {
+  #item-list {
+    height: 40vh !important; /* fixed height so it doesn’t collapse */
+  }
+}
+
+/* On desktop, let the grid height control it */
+@media (min-width: 768px) {
+  #item-list {
+    height: auto !important; /* remove fixed height on desktop */
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+  /*background: rgb(219, 234, 254); */
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1); 
+  z-index: 50; /* keep it above other content */
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1); 
+}

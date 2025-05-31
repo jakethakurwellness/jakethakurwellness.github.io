@@ -2,6 +2,9 @@
   - Add images to nutrition 
   - Add images to supplements
 
+  - Fix mobile viewport
+  - Update li text decoration for superset items
+
   - Provide accurate frequency for nutrition
   - Provide accurate frequency for supplements
   
@@ -2110,7 +2113,8 @@ const protocolData = {
           "Muscle Ups (50 reps, mix and match)",
           "SB Dips (2 sets failure)",
           "Pullups (2 sets failure)",
-          "Right Arm Hanging Pulse (2x8)"
+          "Right Arm Hanging Pulse (2x8)", 
+          "Pistol Squats (1x6-10"
         ]
       },
       {
@@ -2135,8 +2139,8 @@ const protocolData = {
           "Toe-To-Bar (1x10)",
           "Right Arm Hanging Pulse (1x8)",
           "L-sit to V-sit Raise (1x3)",
-          "}",
-          "Pistol Squats (3x6-10)"
+          "Pistol Squats (1x6-10)",
+          "}"
         ]
       }
     ],
@@ -2158,16 +2162,17 @@ const protocolData = {
         name: "Morning",
         description: "Routine to maintain joint health and ROM.", 
         routine: [
+          "Laying Foot-Supported Lengthen (Hooking feet on ledge, pull torso forward)",
           "Forearm Cat-Cow (1min slow reps)",
           "Toe-Touch Walkout to Full Cobra (5 reps with hold)",
           "Dead Hang (1min)",
           "Foam Rolling (Left Back + Side)",
           "Foam Rolling (Hamstring, IT Band, Anterior/Posterior/Interior Calf)",
           "Left Side Bolster (placing bolster under left ribs, breath into right ribcage. 3min)",
-          "Right Side Plank + Hip Lift (3x1min)",
-          "Right Arm Wall Reach Neural Cue (standing with right side to wall, reach right arm as high as possible, left arm to side, breathe into right ribs, holding breath 3x)",
+          "Right Side Plank + Hip Lift (2x1min)",
+          "Right Arm Wall Reach Neural Cue (standing with right side to wall, reach right arm as high as possible, left arm to side, breathe into right ribs, holding breath 2x)",
           "Dead Hang (1min)",
-          "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 5min)"
+          "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 3min)"
         ]
       },
       {
@@ -2182,8 +2187,8 @@ const protocolData = {
           "Foam Rolling (Hamstring, IT Band, Anterior/Posterior/Interior Calf)",
           "Left Side Bolster (placing bolster under left ribs, breath into right ribcage. 3min)",
           "Dead Hang (30sec)",
-          "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 5min)",
-
+          "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 3min)",
+          "Laying Foot-Supported Lengthen (Hooking feet on ledge, pull torso forward)"
         ]
       }
     ]
