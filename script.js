@@ -21,7 +21,6 @@
   - Update nonedibles list
   - Update eating list
   - Update training list
-  - Sourcing arrows not scrolling sourcing
 */
 
 // Local protocol data for testing without fetch
