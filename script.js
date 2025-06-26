@@ -2181,11 +2181,13 @@ const protocolData = {
           "Smith Machine Calf Raise (4x8-15)",
           "Barbell RDL (2x6-10)",
           "Kettlebell Tibialis Raise (2x8-15)",
-          "Dumbbell Hammer Curl (3x8-15)",
-          "Cable Lateral Raise (3x8-15)",
-          "Cable Reverse Fly (3x8-15)",
-          "Cable Low-High Chest Fly (4x8-15)",
-          "Cable Lateral Raise (3x8-15)"
+          "Dumbbell Hammer Curl (2x8-15)",
+          "Cable Lateral Raise (Handle) (3x8-15)",
+          "Cable Reverse Fly (No Handle) (4x8-15)",
+          "Cable Supine Bicep Curl (No Handle) (2x8-15)",
+          "Cable Overhead Tricep Extension (No Handle) (2x8-15)",
+          "Cable Low-High Chest Fly (Handle) (4x8-15)",
+          "Cable Lateral Raise (Handle) (3x8-15)"
         ]
       }
     ],
