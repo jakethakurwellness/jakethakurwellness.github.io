@@ -2159,7 +2159,19 @@ const protocolData = {
           "Toe-To-Bar (1x10)", 
           "Right Arm Hanging Pulse (1x8)", 
         ]
-      },
+      }
+    ],
+    running: [
+      {
+        id: "id7",
+        name: "Run",
+        description: "...",
+        routine: [
+          "5K"
+        ]
+      }
+    ],
+    gym: [
       {
         id: "gymI",
         name: "Gym I",
@@ -2174,16 +2186,6 @@ const protocolData = {
           "Cable Reverse Fly (3x8-15)",
           "Cable Low-High Chest Fly (4x8-15)",
           "Cable Lateral Raise (3x8-15)"
-        ]
-      }
-    ],
-    running: [
-      {
-        id: "id7",
-        name: "Run",
-        description: "...",
-        routine: [
-          "5K"
         ]
       }
     ],
