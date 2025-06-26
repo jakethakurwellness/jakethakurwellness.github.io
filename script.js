@@ -2106,11 +2106,11 @@ const protocolData = {
           "Warmup (Bands)",
           "Pushups (1x10)",
           "BHS Pullups(1x5)",
-          "Muscle Ups (50 reps, mix and match)",
+          "Muscle Ups (65 reps, mix and match)",
           "SB Dips (2 sets failure)",
           "Pullups (2 sets failure)",
           "Right Arm Hanging Pulse (2x8)", 
-          "Pistol Squats (1x6-10)"
+          "Pistol Squats (2x6-10)"
         ]
       },
       {
@@ -2121,7 +2121,7 @@ const protocolData = {
           "Warmup (Bands)",
           "Supinated Dead Hang (1 set 30+ seconds)",
           "German Hang (2 sets 10+ seconds)",
-          "Repeat 3x",
+          "Repeat 2x",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever (max hold)",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Lever (max hold)",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever Negative (1 rep)",
@@ -2133,8 +2133,47 @@ const protocolData = {
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windshield Wipers (1x5)",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toe-To-Bar (1x10)",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right Arm Hanging Pulse (1x8)",
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit to V-sit Raise (1x3)",
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pistol Squats (1x6-10)"
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit to V-sit Raise (1x3)"
+        ]
+      },
+      {
+        id: "hybridI",
+        name: "Hybrid I",
+        description: "...",
+        routine: [
+          "Warmup (Bands)",
+          "Supinated Dead Hang (1 set 30+ seconds)",
+          "German Hang (2 sets 10+ seconds)",
+          "Repeat 2x",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Lever (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever Tuck (max hold)",
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit Ground (max hold)",
+          "Pushups (1x10)",
+          "BHS Pullups(1x5)",
+          "Muscle Ups (35 reps, mix and match)",
+          "SB Dips (2 sets failure)",
+          "Pullups (2 sets failure)",
+          "Pistol Squats (2x6-10)",
+          "Windshield Wipers (1x5)", 
+          "Toe-To-Bar (1x10)", 
+          "Right Arm Hanging Pulse (1x8)", 
+        ]
+      },
+      {
+        id: "gymI",
+        name: "Gym I",
+        description: "...",
+        routine: [
+          "Smith Machine Heel-Elevated Squats (2x6-10)",
+          "Smith Machine Calf Raise (4x8-15)",
+          "Barbell RDL (2x6-10)",
+          "Kettlebell Tibialis Raise (2x8-15)",
+          "Dumbbell Hammer Curl (3x8-15)",
+          "Cable Lateral Raise (3x8-15)",
+          "Cable Reverse Fly (3x8-15)",
+          "Cable Low-High Chest Fly (4x8-15)",
+          "Cable Lateral Raise (3x8-15)"
         ]
       }
     ],
@@ -2144,9 +2183,7 @@ const protocolData = {
         name: "Run",
         description: "...",
         routine: [
-          "band",
-          "german",
-          "EXAMPLE"
+          "5K"
         ]
       }
     ],
