@@ -2184,8 +2184,6 @@ const protocolData = {
           "Dumbbell Hammer Curl (3x8-15)",
           "Cable Lateral Raise (Handle) (3x8-15)",
           "Cable Reverse Fly (No Handle) (4x8-15)",
-          "Cable Supine Bicep Curl (No Handle) (3x8-15)",
-          "Cable Overhead Tricep Extension (No Handle) (3x8-15)",
           "Cable Low-High Chest Fly (Handle) (4x8-15)",
           "Cable Lateral Raise (Handle) (3x8-15)"
         ]
