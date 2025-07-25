@@ -2101,16 +2101,13 @@ const protocolData = {
         name: "Dynamics I",
         description: "...",
         routine: [
-          "Pushups (1x10)",
-          "BHS Pullups (1x5)",
           "Warmup (Bands)",
           "Pushups (1x10)",
           "BHS Pullups(1x5)",
-          "Muscle Ups (65 reps, mix and match)",
+          "Muscle Ups (60 reps, mix and match)",
           "SB Dips (2 sets failure)",
           "Pullups (2 sets failure)",
-          "Right Arm Hanging Pulse (2x8)", 
-          "Pistol Squats (2x6-10)"
+          "Right Arm Hanging Pulse (2x8)"
         ]
       },
       {
@@ -2150,10 +2147,9 @@ const protocolData = {
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Lever Tuck (max hold)",
           "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-sit Ground (max hold)",
           "BHS Pullups(1x5)",
-          "Muscle Ups (35 reps, mix and match)",
+          "Muscle Ups (40 reps, mix and match)",
           "SB Dips (1 set failure)",
           "Pullups (1 set failure)",
-          "Pistol Squats (1x6-10)",
           "Windshield Wipers (1x5)", 
           "Toe-To-Bar (1x10)", 
           "Right Arm Hanging Pulse (1x8)", 
@@ -2162,11 +2158,19 @@ const protocolData = {
     ],
     running: [
       {
-        id: "id7",
-        name: "Run",
+        id: "runI",
+        name: "Run I",
         description: "...",
         routine: [
-          "5K"
+          "Mile Fast, Mile Easy"
+        ]
+      },
+      {
+        id: "runII",
+        name: "Run II",
+        description: "...",
+        routine: [
+          "Easy Recovery"
         ]
       }
     ],
@@ -2176,11 +2180,14 @@ const protocolData = {
         name: "Gym I",
         description: "...",
         routine: [
-          "Barbell RDL (2x6-10)",
-          "Smith Machine Heel-Elevated Squats (2x6-10)",
+          "Barbell RDL (3x6-10)", 
+          "Pistol Squats (2x6-10)"
+          "Smith Machine Heel-Elevated Squats OR Hack Squat (2x6-10)",
           "Smith Machine Calf Raise (4x8-15)",
-          "Kettlebell Tibialis Raise (2x8-15)",
+          "Kettlebell / Push Tibialis Raise (3x8-15)",
           "Dumbbell Hammer Curl (3x8-15)",
+          "Dumbbell Reverse Curl (2x8-15)",
+          "Cable Lat Pullover (3x8-15)",
           "Cable Lateral Raise (Handle) (3x8-15)",
           "Cable Reverse Fly (No Handle) (4x8-15)",
           "Cable Low-High Chest Fly (Handle) (4x8-15)",
@@ -2222,6 +2229,23 @@ const protocolData = {
           "Dead Hang (30sec)",
           "Flat Lower Bolster (placing bolster above pelvis, lay flat to let hips relax and decompress lumbar. 3min)",
           "Laying Foot-Supported Lengthen (Hooking feet on ledge, pull torso forward)"
+        ]
+      }
+    ],
+    ,
+    routine: [
+      {
+        id: "weekly",
+        name: "Weekly",
+        description: "Full Training Routine.", 
+        routine: [
+          "Monday: Dynamics I + OPTIONAL Run II",
+          "Tuesday: Boxing I + Gym I",
+          "Wednesday: Run I + Statics I",
+          "Thursday: Boxing I + Gym I",
+          "Friday: Hybrid I",
+          "Saturday: Run I",
+          "Sunday: Boxing I + OPTIONAL Run II",
         ]
       }
     ]
