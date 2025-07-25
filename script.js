@@ -2181,7 +2181,7 @@ const protocolData = {
         description: "...",
         routine: [
           "Barbell RDL (3x6-10)", 
-          "Pistol Squats (2x6-10)"
+          "Pistol Squats (2x6-10)",
           "Smith Machine Heel-Elevated Squats OR Hack Squat (2x6-10)",
           "Smith Machine Calf Raise (4x8-15)",
           "Kettlebell / Push Tibialis Raise (3x8-15)",
@@ -2232,7 +2232,6 @@ const protocolData = {
         ]
       }
     ],
-    ,
     routine: [
       {
         id: "weekly",
