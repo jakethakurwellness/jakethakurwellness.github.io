@@ -2180,11 +2180,11 @@ const protocolData = {
         name: "Gym I",
         description: "...",
         routine: [
-          "Barbell RDL (3x6-10)", 
+          "Barbell RDL (2x6-10)", 
           "Pistol Squats (2x6-10)",
           "Smith Machine Heel-Elevated Squats OR Hack Squat (2x6-10)",
           "Smith Machine Calf Raise (4x8-15)",
-          "Kettlebell / Push Tibialis Raise (3x8-15)",
+          "Kettlebell / Push Tibialis Raise (2x8-15)",
           "Dumbbell Hammer Curl (3x8-15)",
           "Dumbbell Reverse Curl (2x8-15)",
           "Cable Lat Pullover (3x8-15)",
